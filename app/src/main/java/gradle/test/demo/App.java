@@ -3,12 +3,17 @@
  */
 package gradle.test.demo;
 
+import static gradle.test.demo.factory.BrowserFactory.driver;
+import static gradle.test.demo.factory.BrowserFactory.driverQuit;
+
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
+    public static void loadPage() {
+        driver.get("https://www.google.com/");
+        System.out.println("page loaded");
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        loadPage();
+        driverQuit();
     }
 }
