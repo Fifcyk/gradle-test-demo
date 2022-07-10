@@ -20,6 +20,9 @@ dependencies {
     // Use TestNG framework, also requires calling test.useTestNG() below
     testImplementation("org.testng:testng:7.4.0")
 
+    //Selenium 4 dependency
+    testImplementation("org.seleniumhq.selenium:selenium-java:4.0.0")
+
     // This dependency is used by the application.
     implementation("com.google.guava:guava:30.1.1-jre")
 }
